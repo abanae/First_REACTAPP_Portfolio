@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# My First React App 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 Source code for creating a simple timeline in React. Used in my Youtube tutorial found here: https://www.youtube.com/watch?v=-rnkToU2_lw
+
+https://aleksandarpopovic.com/Build-Simple-Timeline-in-React/
