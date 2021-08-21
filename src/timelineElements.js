@@ -1,63 +1,65 @@
 let timelineElements = [
+  {
+    id: 1,
+    title: "University of Denver, University of Denver Coding Bootcamp",
+    location: "Denver, Colorado",
+    description:
+      "*24 weeks of immersive experience that teaches Junior level web developers the skills needed to be successful. *Completed daily challenges & weekly projects gaining experience in full-stack development and deployment. *Practice pair-programing, test driven development, and agile methodologies",
+      buttonText: "Course Certificate",
+      date: "April 2021 - Current",
+    icon: "school",
+  },
     {
-      id: 1,
-      title: "Frontend Developer",
-      location: "Dragontail, Ascana",
+      id: 2,
+      title: "'Password Generator'",
+      location: "BootCamp, University of Denver",
       description:
         "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
       buttonText: "View Frontend Projects",
-      date: "August 2016 - present",
-      icon: "work",
-    },
-    {
-      id: 2,
-      title: "Backend Developer",
-      location: "Skystead, Craonia",
-      description:
-        "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-      buttonText: "View Backend Projects",
-      date: "June 2013 - August 2016",
+      date: "May 2021",
       icon: "work",
     },
     {
       id: 3,
-      title: "Quality Assurance Engineer",
-      location: "South Warren, Geshington",
+      title: "'Urban Cipher'",
+      location: "BootCamp, University of Denver",
       description:
-        "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-      buttonText: "Company Website",
-      date: "September 2011 - June 2013",
+        "Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages. DESCRIPTION : Deepen your lyrical knowledge by using our dictionary functions to look up any 'slang' term from your favorite songs.Or further your 'traditional' knowledge with our Webster dictionary search.",
+      buttonText: "View Backend Projects",
+      date: "June 2021",
       icon: "work",
     },
     {
       id: 4,
-      title: "Oak Ridge College",
-      location: "South Warren, Geshington",
+      title: "'The Tech Blog'",
+      location: "BootCamp, University of Denver",
       description:
-        "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "Course Certificate",
-      date: "September 2011",
-      icon: "school",
+        "A Blog created with mysql database, CMS-style, Model View Controller (MVC) paradigm. User is required to sign up to create posts or comments to the blog. User can also update & delete comments/posts.",
+      buttonText: "View Backend Projects",
+      date: "July 2021",
+      icon: "work",
     },
     {
       id: 5,
-      title: "Hawking College",
-      location: "Skystead, Craonia",
+      title: "Really Good Fake Store",
+      location: "BootCamp, University of Denver",
       description:
-        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "College Projects",
-      date: "2007 - 2011",
-      icon: "school",
+        "Our project is a mock e-commerce store called Really Good Fake Store. E-commerce websites make up about 10% of the internet. Our goal was to be able to build this mock store with our current coding skills to mock something similar to what we might see on a real job.The client has the ability to create an account, login/logout, and add/delete products to their shpping cart.",
+      buttonText: "View Backend Projects",
+      date: "August 2021",
+      icon: "work",
     },
     {
       id: 6,
-      title: "Marble Hills Grammar School",
-      location: "Dragontail, Ascana",
+      title: "Coming Soon..",
+      location: "BootCamp, University of Denver",
       description:
-        "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2003 - 2007",
-      icon: "school",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      buttonText: "View Backend Projects",
+      date: "Currently Working On It",
+      icon: "work",
     },
+    
   ]
   
   export default timelineElements
