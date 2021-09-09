@@ -117,7 +117,7 @@ export default function MiniDrawer() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Mini variant drawer
+            My project Timeline
           </Typography>
         </Toolbar>
       </AppBar>

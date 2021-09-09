@@ -23,7 +23,6 @@ function App() {
       
     </Navbar>
 
-      <h1 className="title">My Project Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
