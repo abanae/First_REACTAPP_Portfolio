@@ -1,8 +1,10 @@
 import "./App.css";
 import { ReactComponent as WorkIcon } from "./work.svg";
-import { ReactComponent as SchoolIcon } from "./school.svg";
+import { ReactComponent as SchoolIcon } from "./school.svg"
+import Navbar from './components/Navbar'
 
 import timelineElements from "./timelineElements";
+// import Layout from "./components/Layout"
 
 import {
   VerticalTimeline,
@@ -17,6 +19,10 @@ function App() {
 
   return (
     <div>
+      <Navbar>
+      
+    </Navbar>
+
       <h1 className="title">My Project Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
@@ -51,6 +57,8 @@ function App() {
                   {element.buttonText}
                 </a>
               )}
+              {/* <button onClick={button}>
+              </button> */}
             </VerticalTimelineElement>
           );
         })}
