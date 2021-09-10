@@ -1,68 +1,32 @@
 import "./App.css";
-import { ReactComponent as WorkIcon } from "./work.svg";
-import { ReactComponent as SchoolIcon } from "./school.svg"
-import Navbar from './components/Navbar'
 
-import timelineElements from "./timelineElements";
-// import Layout from "./components/Layout"
+import {useState} from 'react';
+import Navbar from './components/Navbar';
+import Timeline from './components/Timeline';
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+
 
 import "react-vertical-timeline-component/style.min.css";
 
 function App() {
-  let workIconStyles = { background: "#06D6A0" };
-  let schoolIconStyles = { background: "#f9c74f" };
-
+  const [toRender, setToRender] = useState('home');
+  const handleRender = () => {
+  switch(toRender){
+    case 'home':
+       return <Timeline/>
+  }
+}
+const handleClick = () => {
+  setToRender("intro");
+}
   return (
     <div>
-      <Navbar>
-      
-    </Navbar>
-
-      <VerticalTimeline>
-        {timelineElements.map((element) => {
-          let isWorkIcon = element.icon === "work";
-          let showButton =
-            element.buttonText !== undefined &&
-            element.buttonText !== null &&
-            element.buttonText !== "";
-
-          return (
-            <VerticalTimelineElement
-              key={element.key}
-              date={element.date}
-              dateClassName="date"
-              iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-            >
-              <h3 className="vertical-timeline-element-title">
-                {element.title}
-              </h3>
-              <h5 className="vertical-timeline-element-subtitle">
-                {element.location}
-              </h5>
-              <p id="description">{element.description}</p>
-              {showButton && (
-                <a
-                  className={`button ${
-                    isWorkIcon ? "workButton" : "schoolButton"
-                  }`}
-                  href="/"
-                >
-                  {element.buttonText}
-                </a>
-              )}
-              {/* <button onClick={button}>
-              </button> */}
-            </VerticalTimelineElement>
-          );
-        })}
-      </VerticalTimeline>
+      <Navbar />
+{handleRender(toRender)}
+<p>TEST</p>
+<button style={{marginLeft: '100px'}} onClick={handleClick}>click me</button>
     </div>
+
   );
 }
 

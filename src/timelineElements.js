@@ -17,10 +17,9 @@ let timelineElements = [
         "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
       date: "May 2021",
       icon: "work",
-      link :{
-        url: 'https://abanae.github.io/Password_Generator/',
+        buttonUrl: 'https://abanae.github.io/Password_Generator/',
         buttonText: "View Frontend Projects",
-      }
+    
     },
     {
       id: 3,
