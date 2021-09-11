@@ -23,7 +23,6 @@ const handleClick = () => {
     <div>
       <Navbar />
 {handleRender(toRender)}
-<p>TEST</p>
 <button style={{marginLeft: '100px'}} onClick={handleClick}>click me</button>
     </div>
 
