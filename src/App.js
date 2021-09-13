@@ -3,7 +3,7 @@ import "./App.css";
 import {useState} from 'react';
 import Navbar from './components/Navbar';
 import Timeline from './components/Timeline';
-// import Aboutme from './components/AboutMe';
+import AboutMe from './components/AboutMe';
 
 
 
@@ -16,11 +16,11 @@ function App() {
   //   case 'home':
   //      return <Timeline/>
   // }
-
   if(toRender === 'home'){
+    
 return <Timeline/>;
   }else if (toRender === 'aboutme'){
-    return <div>Ana's About Me</div>;
+    return <AboutMe/>;
   }
 }
 const handleClick = () => {
