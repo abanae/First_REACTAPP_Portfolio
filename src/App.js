@@ -4,6 +4,7 @@ import {useState} from 'react';
 import Navbar from './components/Navbar';
 import Timeline from './components/Timeline';
 import AboutMe from './components/AboutMe';
+import ContactMe from "./components/ContactMe";
 
 
 
@@ -22,8 +23,11 @@ function App() {
 return <Timeline/>;
   }else if (toRender === 'aboutme'){
     return <AboutMe/>;
+  }else if (toRender === 'contactme'){
+    return <ContactMe/>;
   }
 }
+
 const handleClick = (name) => {
   console.log(name);
   if (toRender === 'aboutme'){
@@ -31,6 +35,7 @@ const handleClick = (name) => {
   }else if (toRender === 'home'){
     setToRender('aboutme')
   }
+
 }
   return (
     <div>
