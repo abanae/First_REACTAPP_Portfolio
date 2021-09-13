@@ -56,13 +56,12 @@
 h2{
   margin-top: 6em;
 }
-
   .column {
       float: left;
       width: 45%;
       height: 200px; 
     padding: 50px 50px;
-    /* margin: 100px 30px; */
+    
     border-bottom: 5px solid #fafafa;
   }
   .column:hover {
@@ -73,6 +72,11 @@ h2{
     color: #35bcf1;
    margin-top: -50px;
   }
+
+  /* margin-left: 472px;
+  margin-top: -337px;
+  padding-bottom: 144px;
+  font-size: 26px; */
 
   @media only screen and (max-width: 1700px) {
     .vertical-timeline-element-date {
