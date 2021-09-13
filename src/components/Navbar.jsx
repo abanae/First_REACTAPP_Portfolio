@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MiniDrawer() {
+export default function MiniDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -143,7 +143,8 @@ export default function MiniDrawer() {
         <Divider />
         <List>
           {['About Me', 'Resume', 'Projects', 'Contact Me'].map((text, index) => (
-            <ListItem button key={text}>
+            <ListItem button key={text} onClick={() => props.handleClick(text)}
+            >
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>

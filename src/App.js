@@ -11,19 +11,21 @@ import "react-vertical-timeline-component/style.min.css";
 
 function App() {
   const [toRender, setToRender] = useState('home');
-  const handleRender = () => {
+  const handleRender = () => {  
   // switch(toRender){
   //   case 'home':
   //      return <Timeline/>
+  //      case 'aboutme':
+  //      return <AboutMe/>
   // }
-  if(toRender === 'home'){
-    
+  if(toRender === 'home'){ 
 return <Timeline/>;
   }else if (toRender === 'aboutme'){
     return <AboutMe/>;
   }
 }
-const handleClick = () => {
+const handleClick = (name) => {
+  console.log(name);
   if (toRender === 'aboutme'){
     setToRender('home');
   }else if (toRender === 'home'){
@@ -32,9 +34,8 @@ const handleClick = () => {
 }
   return (
     <div>
-      <Navbar />
+      <Navbar handleClick={handleClick}/>
 {handleRender()}
-<button style={{marginLeft: '100px'}} onClick={handleClick}>click me</button>
     </div>
 
   );

@@ -3,7 +3,7 @@ import  Image from '../image/portrait.jpeg';
 import Typical from 'react-typical';
 
 const AboutMe = () => {
-    const [expertises, setExpertise] = useState([
+    const [expertises] = useState([
         { title: 'WEB DEVELOPMENT', body: 'I have experience building websites and chrome extentions using JavaScript,React,HTML,CSS', id: 1 },
         { title: 'DATA STRUCTURES & ALGORITHMS', body: 'As coming from the CS background, I have good grasp over fundamental concepts of DSA', id: 2 }
       ])
