@@ -52,6 +52,18 @@ function Timeline() {
                   {element.buttonText}
                 </a>
               )}
+              {/* {showButton && (
+                <a 
+                  className={`button ${
+                    isWorkIcon ? "workButton" : "schoolButton"
+                  }`}
+                  rel="noreferrer"
+                  target="_blank"
+                  href={element.buttonUrl}
+                >
+                  {element.buttonText}
+                </a>
+              )} */}
             </VerticalTimelineElement>
           );
         })}

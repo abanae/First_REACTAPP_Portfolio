@@ -19,7 +19,7 @@ let timelineElements = [
     date: "May 2021",
     icon: "work",
     buttonUrl: 'https://abanae.github.io/Password_Generator/',
-    buttonText: "View Frontend Projects",
+    buttonText: "Deployed Applications",
 
   },
   {
@@ -31,7 +31,7 @@ let timelineElements = [
     date: "June 2021",
     icon: "work",
     buttonUrl: 'https://maximosandoval.github.io/urban-cipher/',
-    buttonText: "View Backend Projects",
+    buttonText: "Deployed Applications",
 
   },
   {
@@ -43,7 +43,7 @@ let timelineElements = [
     date: "July 2021",
     icon: "work",
     buttonUrl: 'https://awesome-blogger.herokuapp.com/',
-    buttonText: "View Backend Projects",
+    buttonText: "Deployed Applications",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ let timelineElements = [
     date: "August 2021",
     icon: "work",
     buttonUrl: 'https://really-good-fake-store.herokuapp.com/',
-    buttonText: "View Backend Projects",
+    buttonText: "Deployed Applications",
 
   },
   {
@@ -65,10 +65,31 @@ let timelineElements = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
     date: "Currently Working On It",
     icon: "work",
-    // buttonUrl: '',
-    // buttonText: "View Backend Projects",
+    buttonUrl: '',
+    buttonText: "Deployed Applications",
   },
-
+  {
+    id: 7,
+    title: "Coming Soon..",
+    location: "BootCamp, University of Denver",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+    date: "Currently Working On It",
+    icon: "work",
+    buttonUrl: '',
+    buttonText: "Deployed Applications",
+  },
+  {
+    id: 8,
+    title: "Coming Soon..",
+    location: "BootCamp, University of Denver",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+    date: "Currently Working On It",
+    icon: "work",
+    buttonUrl: '',
+    buttonText: "Deployed Applications",
+  },
 ]
 
 export default timelineElements
