@@ -15,8 +15,9 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import AccountTreeIcon from '@material-ui/icons/AccountTree';
+import DescriptionIcon from '@material-ui/icons/Description';
 import Footer from "./Footer";
 
 
@@ -167,7 +168,7 @@ export default function MiniDrawer(props) {
               onClick={() => props.handleClick(text.route)}
             >
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index % 2 === 0 ? <AccountBoxIcon  /> : <AccountTreeIcon />}
               </ListItemIcon>
               <ListItemText primary={text.displayText} />
             </ListItem>
@@ -175,7 +176,7 @@ export default function MiniDrawer(props) {
           <a href='/resume1.pdf' target='_blank' style={{textDecoration:'none', color:'black'}}>
            <ListItem button>
             <ListItemIcon>
-              <MailIcon />
+              <DescriptionIcon />
             </ListItemIcon>
             <ListItemText primary="Resume" />
           </ListItem>
