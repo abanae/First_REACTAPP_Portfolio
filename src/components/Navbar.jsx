@@ -17,7 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-
+import Footer from './Footer';
 
 const drawerWidth = 240;
 
@@ -142,13 +142,27 @@ export default function MiniDrawer(props) {
         </div>
         <Divider />
         <List>
-          {['About Me', 'Resume', 'Projects', 'Contact Me'].map((text, index) => (
-            <ListItem button key={text} onClick={() => props.handleClick(text)}
+          {[
+            { 
+              displayText:'About Me',
+              route:'aboutme',
+            },
+            {
+              displayText:'Projects',
+              route:'timeline',
+             },
+             {
+              displayText:'Contact Me',
+              route:'contactme',
+             },
+          ].map((text, index) => (
+            <ListItem button key={index} onClick={() => props.handleClick(text.route)}
             >
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={text.displayText} />
             </ListItem>
           ))}
+           <Footer/>
         </List>
       </Drawer>
       <main className={classes.content}>
