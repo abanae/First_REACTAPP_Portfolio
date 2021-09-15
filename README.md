@@ -1,74 +1,59 @@
 # My First React App (Portfolio) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description:
+Created a portfolio using the latest technologies with my new React skills, which will help future employers see my skills.
 
-## Available Scripts
+   ### Table of Contents:
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-[https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
- [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-[https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
- [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
+   - [Installation](#installation)
+   - [Usage](#usage)
+   - [Final Results](#final-results)
+   - [Tests](#testing)
+   - [Questions](#additional-info)
 
 
-### `npm run build` fails to minify
+## Installation:
+  You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine.
+  In order to use this application you will need to first run an `npm install` dependencies listed below:
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [Material UI](https://material-ui.com/)
+- [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component)
+- [react-typical](https://www.npmjs.com/package/react-typical)
+- [Web-vitals](https://www.npmjs.com/package/web-vitals)
 
- [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Cloud Application Platform:
+- [Github Pages]() 
 
 
-Source code for creating a simple timeline in React. Used in my Youtube tutorial found here: https://www.youtube.com/watch?v=-rnkToU2_lw
 
+## Usage:
+1. `npx create-react-app timeline`.
+3. `cd timeline`
+2. `npm start`. 
+
+
+
+## Final Results:
+![Responsive Viewport](https://media.giphy.com/media/ek7dLydny8Xo681Inm/giphy.gif?cid=790b7611289e5f4a5ceb6b8e20825dc89886dec5c1145f23&rid=giphy.gif&ct=g)
+
+
+
+
+## Testing:
+- REACT  -  React is a JavaScript library for building modern applications. React is used for handling the view layer and can be used for development of both web and mobile applications.
+- react-router-dom- DOM bindings for React Router.
+- Material UI - React components for faster and easier web development. Build your own design system, or start with Material Design.
+- react-vertical-timeline-component - A simple component for create a vertical timeline with Reactjs.
+- react-typical - React Animated typing in ~400 bytes of JavaScript.
+- web-Vitals -  TypeScript icon, indicating that this package has built-in type declarations. 
+- Javascript - Used to base functionality of functions and prompts within the application.
+- GitHub - Hosts repository that can be deployed to GitHub Pages. 
+
+
+## Additional Info:
+:octocat: [Ana Abad](https://github.com/abanae)
+- Email: https://github.com/abanae 
+
+Source code for creating a simple timeline in React. Used in Youtube tutorial found here: https://www.youtube.com/watch?v=-rnkToU2_lw
 https://aleksandarpopovic.com/Build-Simple-Timeline-in-React/

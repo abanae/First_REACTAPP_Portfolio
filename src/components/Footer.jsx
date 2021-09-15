@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <BottomNavigation
       with="auto"
-      style={{ background: "#3f51b5"}}
+      style={{ background: "#3f51b5", marginTop:"35rem"}}
     >
       <a href="https://github.com/abanae" target="_blank" rel="noreferrer">
         <BottomNavigationAction
