@@ -52,18 +52,18 @@ function Timeline() {
                   {element.buttonText}
                 </a>
               )}
-              {/* {showButton && (
+              {showButton && (
                 <a 
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
                   rel="noreferrer"
                   target="_blank"
-                  href={element.buttonUrl}
+                  href={element.buttonDeploy}
                 >
-                  {element.buttonText}
+                  {element.btntxt}
                 </a>
-              )} */}
+              )}
             </VerticalTimelineElement>
           );
         })}

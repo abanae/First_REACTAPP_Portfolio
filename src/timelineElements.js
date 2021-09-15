@@ -19,7 +19,9 @@ let timelineElements = [
     date: "May 2021",
     icon: "work",
     buttonUrl: 'https://abanae.github.io/Password_Generator/',
-    buttonText: "Deployed Applications",
+    buttonText: "Deployed Application",
+    buttonDeploy: 'https://github.com/abanae/Password_Generator',
+    btntxt: 'Github Source',
 
   },
   {
@@ -31,7 +33,9 @@ let timelineElements = [
     date: "June 2021",
     icon: "work",
     buttonUrl: 'https://maximosandoval.github.io/urban-cipher/',
-    buttonText: "Deployed Applications",
+    buttonText: "Deployed Application",
+    buttonDeploy: 'https://github.com/maximosandoval/urban-cipher',
+    btntxt: 'Github Source',
 
   },
   {
@@ -43,7 +47,9 @@ let timelineElements = [
     date: "July 2021",
     icon: "work",
     buttonUrl: 'https://awesome-blogger.herokuapp.com/',
-    buttonText: "Deployed Applications",
+    buttonText: "Deployed Application",
+    buttonDeploy: 'https://github.com/abanae/Tech_Blog',
+    btntxt: 'Github Source',
   },
   {
     id: 5,
@@ -54,42 +60,39 @@ let timelineElements = [
     date: "August 2021",
     icon: "work",
     buttonUrl: 'https://really-good-fake-store.herokuapp.com/',
-    buttonText: "Deployed Applications",
+    buttonText: "Deployed Application",
+    buttonDeploy: 'https://github.com/abanae/Really-Good-Fake-Store',
+    btntxt: 'Github Source',
 
   },
   {
     id: 6,
-    title: "Coming Soon..",
+    title: "Javascript-Quiz",
     location: "BootCamp, University of Denver",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    date: "Currently Working On It",
+    date: "May 2021",
     icon: "work",
-    buttonUrl: '',
-    buttonText: "Deployed Applications",
+    buttonUrl: 'https://abanae.github.io/Javascript-Quiz/index.html',
+    buttonText: "Deployed Application",
+    buttonDeploy: 'https://github.com/abanae/Javascript-Quiz',
+    btntxt: 'Github Source',
   },
   {
     id: 7,
-    title: "Coming Soon..",
+    title: "Work Scheduler",
     location: "BootCamp, University of Denver",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    date: "Currently Working On It",
+    date: "May 2021",
     icon: "work",
-    buttonUrl: '',
-    buttonText: "Deployed Applications",
+    buttonUrl: 'https://abanae.github.io/Work_Scheduler/',
+    buttonText: "Deployed Application",
+    buttonDeploy: 'https://github.com/abanae/Work_Scheduler',
+    btntxt: 'Github Source',
   },
-  {
-    id: 8,
-    title: "Coming Soon..",
-    location: "BootCamp, University of Denver",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    date: "Currently Working On It",
-    icon: "work",
-    buttonUrl: '',
-    buttonText: "Deployed Applications",
-  },
+  
 ]
 
 export default timelineElements
+

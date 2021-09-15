@@ -3,18 +3,19 @@ import { makeStyles } from "@material-ui/styles";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import MailIcon from '@material-ui/icons/Mail';
 
 const useStyles = makeStyles({
   root: {
     "& .MuiBottomNavigationAction-root": {
       minWidth: 0,
-      maxWidth: 250,
+    
     },
     "& .MuiSvgIcon-root": {
       fill: "white",
       "&:hover": {
         fill: "#ceeaf5",
-        fontSize: "1.8rem",
+        fontSize: "2rem",
       },
     },
   },
@@ -25,7 +26,7 @@ const Footer = () => {
   return (
     <BottomNavigation
       with="auto"
-      style={{ background: "#3f51b5", marginTop: "20rem" }}
+      style={{ background: "#3f51b5"}}
     >
       <a href="https://github.com/abanae" target="_blank" rel="noreferrer">
         <BottomNavigationAction
@@ -43,6 +44,13 @@ const Footer = () => {
           className={classes.root}
           style={{ padding: 0 }}
           icon={<LinkedInIcon />}
+        />
+      </a>
+      <a href="mailto:aabad0464@gmail.com" >
+        <BottomNavigationAction
+          className={classes.root}
+          style={{ padding: 0 }}
+          icon={<MailIcon/>}
         />
       </a>
     </BottomNavigation>

@@ -182,7 +182,7 @@ export default function MiniDrawer(props) {
           </ListItem>
           </a>
         </List>
-        <Footer />
+        <Footer/>
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
