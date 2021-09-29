@@ -173,7 +173,7 @@ export default function MiniDrawer(props) {
               <ListItemText primary={text.displayText} />
             </ListItem>
           ))}
-          <a href='/resume1.pdf' target='_blank' style={{textDecoration:'none', color:'black'}}>
+          <a href='/first_REACT/resume1.pdf' target='_blank' style={{textDecoration:'none', color:'black'}}>
            <ListItem button>
             <ListItemIcon>
               <DescriptionIcon />

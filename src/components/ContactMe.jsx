@@ -1,66 +1,53 @@
-import React from 'react'
-import {makeStyles, withStyles} from '@material-ui/core/styles'
-import {TextField, Typography, Button, Grid, Box} from '@material-ui/core'
-import SendIcon from '@material-ui/icons/Send'
+import React from "react";
+import { Container } from '@material-ui/core';
+import {TextField} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/Styles';
 
-const useStyles = makeStyles(theme =>({
-form:{
+
+const useStyles = makeStyles({
+  fields: {
+    marginTop: 30,
+    marginBottom: 20,
+    display: 'block',
     width: '50%',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    position: 'absolute',
-},
-button:{
-    marginTop: '1rem',
-    color: 'tomato',
-    borderColor: 'tomato',
+  }
+})
+
+export default function Create() {
+  const classes = useStyles()
+
+  return (
+    <Container>
+      <form autoComplete="off">
+        <TextField
+          className={classes.fields}
+          label="name"
+          variant="outlined"
+          fullWidth
+          required
+        />
+        <TextField
+          className={classes.fields}
+          label="email"
+          variant="outlined"
+          fullWidth
+          required
+        />
+        <TextField
+          className={classes.fields}
+          label="message"
+          multiline
+          rows={4}
+          fullWidth
+          required
+        />
+         <button  style={{ marginLeft:"20rem", fontSize:"1.1rem"}} className="form-btn">Submit</button>
+      </form>
+    </Container>
+
+  );
 }
-}))
 
-const InputField = withStyles({
-    root:{
-        '& label.Mui-focused':{
-            color: 'tomato',
-        },
-    },
-})(TextField);
-
-const ContactMe = ()=>{
-
-    const classes =useStyles();
-
-    return(
-        <Box components='div'>
-          <Grid container justify='center'>
-          <Box component='form' className={classes.form}>
-            <Typography variant= 'h5' style={{color: '#35bcf1'}}>Contact Me</Typography>
-            <InputField 
-            fullWidth={true} 
-            label='Name' 
-            variant='outlined' 
-            margin='dense' 
-            size='medium'/>
-            <br/>
-            <InputField 
-            fullWidth={true} 
-            label='Email' 
-            variant='outlined' 
-            margin='dense'
-             size='medium'/>
-            <br/>
-            <InputField 
-            fullWidth={true} 
-            label='Message' 
-            variant='outlined'/>
-            <br/>
-            <Button className={classes.button} variant='outlined' fullwidth={true} endIcon={<SendIcon/>}>
-                Send
-            </Button>
-          </Box>
-          </Grid>
-        </Box>
-    );
-};
-
-export default ContactMe
